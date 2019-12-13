@@ -1,0 +1,27 @@
+﻿@* The model allow acces to the data model, the <type> is using Bakery.Models  *@
+@model List<Bakery.Models.Pie>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bakery</title>
+</head>
+<body>
+    <h1>Nannas Bakery</h1>
+
+    <h2>This is the list of Pies that we offer today</h2>
+
+    @* Model refers to the data above, loop data and output html *@
+    @foreach(var pie in Model)
+    {
+        <div>
+            <h2>@pie.Name</h2>
+            <p>@pie.ShortDescription</p>
+            @* the c is for currency? *@
+            <h3>@pie.Price.ToString("c")</h3>
+        </div>
+    }
+
+</body>
+</html>
