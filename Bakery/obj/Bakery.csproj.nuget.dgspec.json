@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\github\\ASP.NET\\Bakery\\Bakery\\Bakery.csproj": {}
+    "C:\\github\\ASP.NET\\asp-net-Bakery\\Bakery\\Bakery.csproj": {}
   },
   "projects": {
-    "C:\\github\\ASP.NET\\Bakery\\Bakery\\Bakery.csproj": {
+    "C:\\github\\ASP.NET\\asp-net-Bakery\\Bakery\\Bakery.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\github\\ASP.NET\\Bakery\\Bakery\\Bakery.csproj",
+        "projectUniqueName": "C:\\github\\ASP.NET\\asp-net-Bakery\\Bakery\\Bakery.csproj",
         "projectName": "Bakery",
-        "projectPath": "C:\\github\\ASP.NET\\Bakery\\Bakery\\Bakery.csproj",
+        "projectPath": "C:\\github\\ASP.NET\\asp-net-Bakery\\Bakery\\Bakery.csproj",
         "packagesPath": "C:\\Users\\nanna\\.nuget\\packages\\",
-        "outputPath": "C:\\github\\ASP.NET\\Bakery\\Bakery\\obj\\",
+        "outputPath": "C:\\github\\ASP.NET\\asp-net-Bakery\\Bakery\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
