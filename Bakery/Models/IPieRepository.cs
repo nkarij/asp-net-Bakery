@@ -7,13 +7,12 @@ namespace Bakery.Models
 {
     public interface IPieRepository
     {
-        // why only get? because the data is hardcoded, probably. 
-        List<Pie> AllPies { get; }
+        // why only get? 
+        IEnumerable<Pie> AllPies { get; }
 
         //List<Pie> PiesOfTheWeek { get; }
 
         Pie GetPieByID(int pieid);
-
 
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Bakery.Models;
+using Bakery.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -27,8 +28,23 @@ namespace Bakery.Controllers
         //so that the folder structure will be Views>Pie(controller)>List(viewresult) 
         public ViewResult List()
         {
-            return View(_pieRepository.AllPies);
+            PieListViewModel pieListViewModel = new PieListViewModel();
+            pieListViewModel.Pies = _pieRepository.AllPies;
+            pieListViewModel.RouteToInfoPage = "/contactus/infopage";
+            return View(pieListViewModel);
         }
-    
+        
+        public IActionResult Details(int id)
+        {
+            var pie = _pieRepository.GetPieByID(id);
+
+            if(pie == null)
+            {
+                return NotFound();
+            } else
+            {
+                return View(pie);
+            }
+        }
     }
 }

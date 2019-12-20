@@ -13,7 +13,7 @@ namespace Bakery.Models
             
         }
 
-        public List<Pie> AllPies => new List<Pie>
+        public IEnumerable<Pie> AllPies => new List<Pie>
         {
             new Pie{PieID=1, Name="Blueberry Pie", ShortDescription="This is a Blueberry Pie", Price=12},
             new Pie{PieID=2, Name="Chokolade Pie", ShortDescription="This is a Chokolade Pie", Price=13},

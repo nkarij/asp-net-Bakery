@@ -6,6 +6,8 @@ using Bakery.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
@@ -13,6 +15,15 @@ namespace Bakery
 {
     public class Startup
     {
+        // the Configuration gets the appsettings connections string
+        public IConfiguration Configuration { get; }
+
+        // ctor passes the appsettings via constructor injection, we will have acces to the properties 
+        // in appsettings through the Iconfiguration object
+        public Startup(IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
@@ -20,10 +31,14 @@ namespace Bakery
             // register services here, by dependency injections.
             // fx register framework services, and our own services
 
+            // accessing the Configuration Properties in appsettings, passing it to UseSqlServer
+            services.AddDbContext<AppDbContext>(options => 
+            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             // AddScoped(): the instance will be created and scoped with the request, a singleton pr request.
             //register a service with its interface, remember ctr . to add using Bakery.Model
             // first param is interface, second param is implementation
-            services.AddScoped<IPieRepository, MockPieRepository>();
+            services.AddScoped<IPieRepository, PieRepository>();
+            services.AddScoped<IContactUsRepository, MockContactUsRepository>();
             //Will give you a new instance every time you ask for one (???)
             //services.AddTransient<>();
             //singleton pattern:
