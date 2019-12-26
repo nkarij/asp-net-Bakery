@@ -20501,43 +20501,8 @@
   "RootNamespace": "Bakery",
   "Documents": [
     {
-      "FilePath": "c:\\github\\ASP.NET\\asp-net-Bakery\\Bakery\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\github\\ASP.NET\\asp-net-Bakery\\Bakery\\Views\\Pie\\List.cshtml",
       "TargetPath": "Views\\Pie\\List.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\github\\ASP.NET\\asp-net-Bakery\\Bakery\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\github\\ASP.NET\\asp-net-Bakery\\Bakery\\Views\\Pie\\Details.cshtml",
-      "TargetPath": "Views\\Pie\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\github\\ASP.NET\\asp-net-Bakery\\Bakery\\Views\\Shared\\_PieCard.cshtml",
-      "TargetPath": "Views\\Shared\\_PieCard.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\github\\ASP.NET\\asp-net-Bakery\\Bakery\\Views\\ContactUs\\InfoPage.cshtml",
-      "TargetPath": "Views\\ContactUs\\InfoPage.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\github\\ASP.NET\\asp-net-Bakery\\Bakery\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\github\\ASP.NET\\asp-net-Bakery\\Bakery\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     }
   ],
